@@ -10,16 +10,29 @@ In questo progetto sono stati realizzati:
 
 ## Service Discovery
 
-Su http://localhost:8761/ possiamo trovare Eureka, ove possiamo notare le istanze attualmente registrate con Eureka
+Su http://localhost:8761/ possiamo trovare Eureka, ove possiamo notare le istanze attualmente registrate con Eureka.
 
 <img width="1680" alt="Screenshot 2024-01-23 alle 16 22 58" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/2e6ffe11-3c5e-4ec6-bb85-af4124bf8ac1">
 
 ## API-Gateway
-### Perché i microservizi hanno bisogno di un gateway API
+Un API-Gateway funge da mediatore tra le applicazioni client e i servizi backend nell'architettura a microservizi. Si tratta di un livello software che funziona come un unico endpoint per varie API, eseguendo compiti quali la composizione delle richieste, l'instradamento e la traduzione dei protocolli. L'API-Gateway controlla le richieste e le risposte gestendo il traffico delle API e applicando i criteri di sicurezza. 
 
-Un gateway API è un'applicazione software che collega un client a un insieme di microservizi backend.
-Il gateway API funge da proxy inverso per accettare le chiamate API dall'applicazione client, inoltrando il traffico al servizio appropriato.
-Il gateway fornisce un singolo endpoint o URL per le applicazioni client e poi mappa internamente le richieste a un gruppo di microservizi interni.
+Per poter includere Spring Cloud Gateway all'interno di un progetto, bisogna utilizzare la dipendenza "spring-cloud-starter-gateway".
+
+Esso è composto da alcuni elementi:
+- Route: essa è il blocco base del Gateway e consiste in ID, URI di destinazione e collezione di predicati e collezione di filtri;
+- Predicate: possiamo abbinare richieste HTTP, URL, cookie o parametri;
+- Filter: possiamo modificare la richiesta o la risposta in base alle esgigenze.
+
+Un diagramma semplificato fornito dal sito ufficiale di Spring Cloud Gateway
+
+<img width="424" alt="Screenshot 2024-01-23 alle 17 22 39" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/b2266b42-5eff-49dc-8f79-22f7f8ce9679">
+
+Quando il client effettua una richiesta a Spring Cloud Gateway, il Gateway Handler Mapping verifica se la richiesta corrisponde ad una rotta, e questa viene eseguita mediante l'utilizzo dei predicati. Se corrisponde ai predicati, allora la richiesta viene inviata ai filtri.
+
+Un esempio di instradamento dell'API-Gateway è il seguente:
+
+<img width="598" alt="Screenshot 2024-01-23 alle 16 56 27" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/561b87c2-cbcc-402d-a3eb-bb8a6eda4acb">
 
 ## Service1
 
