@@ -34,7 +34,7 @@ Quando il client effettua una richiesta a Spring Cloud Gateway, il Gateway Handl
 
 Un esempio di instradamento dell'API-Gateway è il seguente:
 
-<img width="598" alt="Screenshot 2024-01-23 alle 16 56 27" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/561b87c2-cbcc-402d-a3eb-bb8a6eda4acb">
+<img width="497" alt="Screenshot 2024-01-23 alle 17 40 27" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/94279586-4ab0-40d2-abd6-7bb243075e10">
 
 ## Service1
 
