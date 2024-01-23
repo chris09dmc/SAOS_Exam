@@ -15,8 +15,11 @@ Su http://localhost:8761/ possiamo trovare Eureka, ove possiamo notare le istanz
 <img width="1680" alt="Screenshot 2024-01-23 alle 16 22 58" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/2e6ffe11-3c5e-4ec6-bb85-af4124bf8ac1">
 
 ## API-Gateway
+### Perché i microservizi hanno bisogno di un gateway API
 
-**
+Un gateway API è un'applicazione software che collega un client a un insieme di microservizi backend.
+Il gateway API funge da proxy inverso per accettare le chiamate API dall'applicazione client, inoltrando il traffico al servizio appropriato.
+Il gateway fornisce un singolo endpoint o URL per le applicazioni client e poi mappa internamente le richieste a un gruppo di microservizi interni.
 
 ## Service1
 
@@ -42,3 +45,5 @@ Questo microservizio, a diffrenza del precedente, ci permette di effeuttuare il 
 <img width="598" alt="Screenshot 2024-01-23 alle 16 56 27" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/17ebafb3-3632-43ff-8ea8-37e56c7f1bde">
 <img width="1291" alt="Screenshot 2024-01-23 alle 16 55 49" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/80d5df76-94db-4c2f-8a5f-90511244a9dd">
 <img width="1291" alt="Screenshot 2024-01-23 alle 16 56 03" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/67c8b00c-e881-4ddd-b34f-8c3cbe13d560">
+
+## Riferimenti
