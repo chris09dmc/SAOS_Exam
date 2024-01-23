@@ -10,6 +10,8 @@ In questo progetto sono stati realizzati:
 
 ## Service Discovery
 
+Il Service Discovery è il processo di individuazione delle singole istanze che compongono un servizio. Il server Eureka è un'applicazione che contiene le informazioni su tutte le applicazioni client-service. Ogni microservizio si registra nel server Eureka e quest'ultimo conosce tutte le applicazioni client in esecuzione su ciascuna porta e indirizzo IP. Il server Eureka è noto anche come server di rilevamento.
+
 Su http://localhost:8761/ possiamo trovare Eureka, ove possiamo notare le istanze attualmente registrate con Eureka.
 
 <img width="1680" alt="Screenshot 2024-01-23 alle 16 22 58" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/2e6ffe11-3c5e-4ec6-bb85-af4124bf8ac1">
@@ -60,3 +62,6 @@ Questo microservizio, a diffrenza del precedente, ci permette di effeuttuare il 
 <img width="1291" alt="Screenshot 2024-01-23 alle 16 56 03" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/67c8b00c-e881-4ddd-b34f-8c3cbe13d560">
 
 ## Riferimenti
+- https://www.tutorialspoint.com/spring_boot/spring_boot_eureka_server.htm
+- https://cloud.spring.io/spring-cloud-gateway/reference/html/#gateway-how-it-works
+- https://konghq.com/learning-center/api-gateway/what-is-an-api-gateway
