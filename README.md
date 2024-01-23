@@ -30,3 +30,15 @@ L'utente sarà salvato all'interno di un Database MySQL, ove sarà presente un'u
 <img width="591" alt="Screenshot 2024-01-23 alle 16 39 29" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/9d9528ad-692b-4192-ac5c-3af0d0bd9a33">
 
 La colonna "Role" sarà riempita poi dal ruolo effettivo che l'utente avrà per effettuare il login nel Service2. Il ruolo che può avere è USER oppure ADMIN.
+
+## Service2
+
+Il Service2 possiamo trovarlo sua su http://localhost:9002/login, che mediante API-Gateway su http://localhost:8080/service2/login
+
+<img width="820" alt="Screenshot 2024-01-23 alle 16 53 27" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/428bb266-edba-4e5e-821a-66fffb4b60d6">
+
+Questo microservizio, a diffrenza del precedente, ci permette di effeuttuare il login (ed anche il logout) dell'utente registrato nel database. Come specificato precedentemente, il login sarà effettuato una volta che l'utente ha avuto assegnato il suo "Role".
+
+<img width="598" alt="Screenshot 2024-01-23 alle 16 56 27" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/17ebafb3-3632-43ff-8ea8-37e56c7f1bde">
+<img width="1291" alt="Screenshot 2024-01-23 alle 16 55 49" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/80d5df76-94db-4c2f-8a5f-90511244a9dd">
+<img width="1291" alt="Screenshot 2024-01-23 alle 16 56 03" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/67c8b00c-e881-4ddd-b34f-8c3cbe13d560">
