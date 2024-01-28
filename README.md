@@ -13,8 +13,9 @@ L'architettura di base è realizzata come mostrata nella figura successiva
 ## Service Discovery
 
 Il Service Discovery è il processo di individuazione delle singole istanze che compongono un servizio. Il server Eureka è un'applicazione che contiene le informazioni su tutte le applicazioni client-service. Ogni microservizio si registra nel server Eureka e quest'ultimo conosce tutte le applicazioni client in esecuzione su ciascuna porta e indirizzo IP. Il server Eureka è noto anche come server di rilevamento.
+Il Service Discovery ha come dipendenza implementata "Eureka Server".
 
-Su http://localhost:8761/ possiamo trovare Eureka, ove possiamo notare le istanze attualmente registrate con Eureka.
+Su http://localhost:8761/ possiamo trovare Eureka, ove possiamo notare le istanze attualmente registrate con Eureka. Per potersi registrare, le istanze sono munite della relativa dipendenza "Eureka Discovery Client".
 
 <img width="1680" alt="Screenshot 2024-01-23 alle 16 22 58" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/2e6ffe11-3c5e-4ec6-bb85-af4124bf8ac1">
 
