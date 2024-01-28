@@ -6,7 +6,7 @@ In questo progetto sono stati realizzati:
 3) Service1 sulla porta 9001
 4) Service2 sulla porta 9002
 
-<img width="541" alt="architettura" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/3c824f99-5b44-43f7-816a-40565c2548fe" align=center>
+<img width="541" alt="architettura" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/3c824f99-5b44-43f7-816a-40565c2548fe">
 
 ## Service Discovery
 
