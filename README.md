@@ -56,7 +56,7 @@ Possiamo raggiungere il Service2 digitando http://localhost:9002/login, oppure m
 
 <img width="820" alt="Screenshot 2024-01-23 alle 16 53 27" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/428bb266-edba-4e5e-821a-66fffb4b60d6">
 
-Questo microservizio, a diffrenza del precedente, ci permette di effeuttuare il login (ed anche il logout) dell'utente registrato nel Database. Prima di poter procedere al Login di un utente, è necessario specificare nalla colonna "role" se l'utente ha accesso come admin o come user. Per far questo, la colonna "role" deve essere modificata aggiungendo USER se l'utente avrà permessi da user, ADMIN se avrà permessi da amministratore.
+Questo microservizio, a diffrenza del precedente, ci permette di effeuttuare il login (ed anche il logout) dell'utente registrato nel Database. Prima di poter procedere al Login di un utente, è necessario specificare nalla colonna "role" se l'utente ha accesso come admin o come user. Per far questo, la colonna "role" deve essere modificata aggiungendo USER se l'utente avrà permessi da utente normale, ADMIN se avrà permessi da amministratore.
 
 <img width="598" alt="Screenshot 2024-01-23 alle 16 56 27" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/17ebafb3-3632-43ff-8ea8-37e56c7f1bde">
 <img width="1291" alt="Screenshot 2024-01-23 alle 16 55 49" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/80d5df76-94db-4c2f-8a5f-90511244a9dd">
