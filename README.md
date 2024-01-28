@@ -41,24 +41,22 @@ Un esempio di instradamento dell'API-Gateway è il seguente:
 
 ## Service1
 
-Il Service1 possiamo trovarlo sia su http://localhost:9001/registration, che mediante API-Gateway su http://localhost:8080/service1/registration
+Possiamo raggiungere il Service1 digitando http://localhost:9001/registration, oppure mediante l'utilizzo dell'API-Gateway digitando http://localhost:8080/service1/registration
 
 <img width="1014" alt="Screenshot 2024-01-23 alle 16 27 53" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/eebb7965-d540-44a6-adb1-97b7765ac525">
 
-Questo microservizio ci permette di effettuare la registrazione di un utente e di salvare nome completo, e-mail e password (crittografata mediante utilizzo di Spring Security).
-L'utente sarà salvato all'interno di un Database MySQL, ove sarà presente un'ulteriore colonna chiamata "Role".
+Questo microservizio ci permette di effettuare la registrazione di un utente e di salvare nome completo, e-mail e password (crittografata mediante utilizzo di Spring Security). L'utente sarà registrato presso un Database MySQL. Viene utilizzato MySQL Workbench per la gestione del Database, esso si connette con il Service1 (ma anche con il Service2) mediante properties specificate in application.properties dei due microservizi.
+Inoltre, all'interno del Database viene visualizzata un'ulteriore colonna chiamata "role", essa viene utilizzata per il microservizio di Login.
 
 <img width="591" alt="Screenshot 2024-01-23 alle 16 39 29" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/9d9528ad-692b-4192-ac5c-3af0d0bd9a33">
 
-La colonna "Role" sarà riempita poi dal ruolo effettivo che l'utente avrà per effettuare il login nel Service2. Il ruolo che può avere è USER oppure ADMIN.
-
 ## Service2
 
-Il Service2 possiamo trovarlo sua su http://localhost:9002/login, che mediante API-Gateway su http://localhost:8080/service2/login
+Possiamo raggiungere il Service2 digitando http://localhost:9002/login, oppure mediante l'utilizzo dell'API-Gateway digitando http://localhost:8080/service2/login
 
 <img width="820" alt="Screenshot 2024-01-23 alle 16 53 27" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/428bb266-edba-4e5e-821a-66fffb4b60d6">
 
-Questo microservizio, a diffrenza del precedente, ci permette di effeuttuare il login (ed anche il logout) dell'utente registrato nel database. Come specificato precedentemente, il login sarà effettuato una volta che l'utente ha avuto assegnato il suo "Role".
+Questo microservizio, a diffrenza del precedente, ci permette di effeuttuare il login (ed anche il logout) dell'utente registrato nel Database. Prima di poter procedere al Login di un utente, è necessario specificare nalla colonna "role" se l'utente ha accesso come admin o come user. Per far questo, la colonna "role" deve essere modificata aggiungendo USER se l'utente avrà permessi da user, ADMIN se avrà permessi da amministratore.
 
 <img width="598" alt="Screenshot 2024-01-23 alle 16 56 27" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/17ebafb3-3632-43ff-8ea8-37e56c7f1bde">
 <img width="1291" alt="Screenshot 2024-01-23 alle 16 55 49" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/80d5df76-94db-4c2f-8a5f-90511244a9dd">
