@@ -41,7 +41,7 @@ Un esempio di instradamento dell'API-Gateway è il seguente:
 
 ## Service1
 
-Possiamo raggiungere il Service1 digitando http://localhost:9001/registration, oppure mediante l'utilizzo dell'API-Gateway digitando http://localhost:8080/service1/registration
+Possiamo raggiungere il Service1 digitando http://localhost:9001/registration, oppure mediante l'utilizzo dell'API-Gateway digitando http://localhost:8080/service1/registration (nel file register.html, modificare il th:action aggiungendo /service1 prima di /registration).
 
 <img width="1014" alt="Screenshot 2024-01-23 alle 16 27 53" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/eebb7965-d540-44a6-adb1-97b7765ac525">
 
@@ -52,7 +52,7 @@ Inoltre, all'interno del Database viene visualizzata un'ulteriore colonna chiama
 
 ## Service2
 
-Possiamo raggiungere il Service2 digitando http://localhost:9002/login, oppure mediante l'utilizzo dell'API-Gateway digitando http://localhost:8080/service2/login
+Possiamo raggiungere il Service2 digitando http://localhost:9002/login, oppure mediante l'utilizzo dell'API-Gateway digitando http://localhost:8080/service2/login (nel file login.html, modificare il th:action aggiungendo /service2 prima di /login).
 
 <img width="820" alt="Screenshot 2024-01-23 alle 16 53 27" src="https://github.com/chris09dmc/SAOS_Exam/assets/98541925/428bb266-edba-4e5e-821a-66fffb4b60d6">
 
